@@ -1,12 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Dashboard from './Dashboard';
-
+import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css'
+import { Navbar,Nav} from "react-bootstrap";
+import Dashboard from "./Dashboard";
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
-    </div>
+    <Navbar className="Navbar" bg="purple" variant="dark"
+      sticky="top" expand="sm" collapseOnSelect>
+      <Navbar.Brand>
+        CARGallery
+      </Navbar.Brand>
+    </Navbar>
+    <Dashboard/>
+  </div>
   );
 }
 
